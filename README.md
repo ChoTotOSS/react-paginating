@@ -155,12 +155,6 @@ class App extends React.Component {
 render(<App />, document.getElementById('root'));
 ```
 
-## Examples
-
-* [with simple basic data](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/withBasic)
-* [with redux & url query param](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/withRedux)
-* [with redux state change](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/withRedux)
-
 ## Props
 
 ### total
