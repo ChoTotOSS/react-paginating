@@ -1,5 +1,10 @@
 # React Paginating
 
+[![codecov](https://codecov.io/gh/ChoTotOSS/react-paginating/branch/master/graph/badge.svg)](https://codecov.io/gh/ChoTotOSS/react-paginating)
+[![npm version](https://badge.fury.io/js/react-paginating.svg)](https://badge.fury.io/js/react-paginating)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ChoTotOSS/react-paginating/blob/master/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 Simple lightweight pagination component.
 
 ![react-paginating](https://user-images.githubusercontent.com/6290720/33229010-d65daf4a-d1f8-11e7-851a-7d3e0d454b48.gif)
