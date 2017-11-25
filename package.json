@@ -34,7 +34,6 @@
     "sinon": "^4.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
     "prebuild": "rimraf dist/*",
     "build": "babel src/Pagination --out-dir dist",
     "test": "react-scripts test --env=jsdom",

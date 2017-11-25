@@ -1,0 +1,9 @@
+{
+  "presets": ["next/babel", "es2015", "es2017", "stage-0"],
+  "plugins": [
+    [
+      "styled-components",
+      { "ssr": true, "displayName": true, "preprocess": false }
+    ]
+  ]
+}

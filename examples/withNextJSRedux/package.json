@@ -1,0 +1,32 @@
+{
+  "name": "with-nextjs-redux",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "next build",
+    "start": "node server.js",
+    "dev": "node server.js",
+    "start:prod": "npm run build && NODE_ENV=production node index.js"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.1.7",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "express": "^4.15.2",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^4.1.4",
+    "next-redux-wrapper": "^1.1.2",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-paginating": "^0.0.1",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.2",
+    "styled-components": "^2.1.1"
+  },
+  "author": "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {}
+}

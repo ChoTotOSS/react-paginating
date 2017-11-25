@@ -1,5 +1,5 @@
 import React from 'react';
-import Pagination from './Pagination';
+import Pagination from 'react-paginating';
 
 const fruits = [
   ['apple', 'orange'],
@@ -12,7 +12,7 @@ const limit = 2;
 const pageCount = 3;
 const total = fruits.length * limit;
 
-class App extends React.Component {
+class Index extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -116,4 +116,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Index;

@@ -155,6 +155,11 @@ class App extends React.Component {
 render(<App />, document.getElementById('root'));
 ```
 
+## Examples
+
+* [with simple basic data](https://github.com/ChoTotOSS/react-paginating/tree/master/examples/withBasic)
+* [with redux & query param from url](https://github.com/ChoTotOSS/react-paginating/tree/master/examples/withNextJSRedux)
+
 ## Props
 
 ### total
@@ -191,8 +196,8 @@ Allow to pass props and event to page item. When page is clicked, `onPageChange`
 will be executed with param value `pageValue`.
 
 **Note:** This callback function should only use for paging with state change.
-If you prefer parsing page value from `query` url. **Please don't use this
-callback function**
+If you prefer parsing page value from `query` url (**Please don't use this
+callback function**).
 
 ## States
 
