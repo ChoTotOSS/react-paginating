@@ -27,7 +27,7 @@ class Pagination extends Component {
     }
   }
 
-  getPageItemProps = props => {
+  _getPageItemProps = props => {
     const { pageValue, onPageChange: handlePageChange } = props;
 
     const onPageChange = () => {
@@ -77,7 +77,7 @@ class Pagination extends Component {
           currentPage,
           hasNextPage,
           hasPreviousPage,
-          getPageItemProps: this.getPageItemProps
+          getPageItemProps: this._getPageItemProps
         })}
       </div>
     );

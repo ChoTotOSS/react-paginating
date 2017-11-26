@@ -32,7 +32,7 @@ var Pagination = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (Pagination.__proto__ || Object.getPrototypeOf(Pagination)).call(this));
 
-    _this.getPageItemProps = function (props) {
+    _this._getPageItemProps = function (props) {
       var pageValue = props.pageValue,
           handlePageChange = props.onPageChange;
 
@@ -114,7 +114,7 @@ var Pagination = function (_Component) {
           currentPage: currentPage,
           hasNextPage: hasNextPage,
           hasPreviousPage: hasPreviousPage,
-          getPageItemProps: this.getPageItemProps
+          getPageItemProps: this._getPageItemProps
         })
       );
     }
