@@ -26,9 +26,9 @@ This approach allows you to fully control UI component and behaviours.
 * [Installation](https://github.com/ChoTotOSS/react-paginating#installation)
 * [Usage](https://github.com/ChoTotOSS/react-paginating#usage)
 * [Examples](https://github.com/ChoTotOSS/react-paginating#examples)
-* [Props](https://github.com/ChoTotOSS/react-paginating#props)
+* [Input Props](https://github.com/ChoTotOSS/react-paginating#props)
 * [Child callback functions](https://github.com/ChoTotOSS/react-paginating#child-callback-functions)
-* [States](https://github.com/ChoTotOSS/react-paginating#states)
+* [Controlled Props](https://github.com/ChoTotOSS/react-paginating#states)
 * [Alternatives](https://github.com/ChoTotOSS/react-paginating#alternatives)
 
 ## Installation
