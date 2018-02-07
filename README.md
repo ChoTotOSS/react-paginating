@@ -21,6 +21,8 @@ about this pattern
 
 This approach allows you to fully control UI component and behaviours.
 
+> See [the intro blog post](https://medium.com/@nndung179/introducing-react-paginating-9128f30f1f6b)
+
 ## Table content
 
 * [Installation](https://github.com/ChoTotOSS/react-paginating#installation)
