@@ -1,3 +1,4 @@
+
 # React Paginating
 
 [![Build Status](https://travis-ci.org/ChoTotOSS/react-paginating.svg?branch=master)](https://travis-ci.org/ChoTotOSS/react-paginating)
@@ -175,7 +176,7 @@ render(<App />, document.getElementById('root'));
 * [with simple basic data](https://github.com/ChoTotOSS/react-paginating/tree/master/examples/withBasic)
 * [with redux & query param from url](https://github.com/ChoTotOSS/react-paginating/tree/master/examples/withNextJSRedux)
 
-## Props
+## Input Props
 
 ### total
 
@@ -214,7 +215,7 @@ will be executed with param value `pageValue`.
 If you prefer parsing page value from `query` url (**Please don't use this
 callback function**).
 
-## States
+## Controlled Props
 
 ### pages
 
