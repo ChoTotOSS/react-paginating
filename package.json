@@ -1,11 +1,10 @@
 {
   "name": "react-paginating",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple, lightweight, flexible pagination component",
   "main": "dist/index.js",
   "typings": "typings/index.d.ts",
-  "author":
-    "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
+  "author": "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
   "keywords": [
     "react",
     "react-component",
@@ -58,6 +57,5 @@
   "bugs": {
     "url": "https://github.com/ChoTotOSS/react-paginating/issues"
   },
-  "homepage":
-    "https://github.com/ChoTotOSS/react-paginating/blob/master/README.md"
+  "homepage": "https://github.com/ChoTotOSS/react-paginating/blob/master/README.md"
 }
