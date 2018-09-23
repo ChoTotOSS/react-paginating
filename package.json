@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Simple, lightweight, flexible pagination component",
   "main": "dist/index.js",
+  "typings": "typings/index.d.ts",
   "author":
     "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
   "keywords": [
