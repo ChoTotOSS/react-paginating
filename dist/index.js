@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 
-var _Pagination = require('./Pagination');
-
-var _Pagination2 = _interopRequireDefault(_Pagination);
+var _Pagination = _interopRequireDefault(require("./Pagination"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = _Pagination2.default;
+var _default = _Pagination.default;
+exports.default = _default;

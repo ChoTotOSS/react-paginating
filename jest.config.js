@@ -1,6 +1,6 @@
 const ignores = ['/node_modules/', '/fixtures/', '__mocks__'];
 
-const testDir = ['src/**/*.js'];
+const testDir = ['src/Pagination/**/*.js'];
 
 module.exports = {
   collectCoverageFrom: [...testDir],
@@ -15,7 +15,7 @@ module.exports = {
       branches: 100,
       functions: 100,
       lines: 100,
-      statements: 100
-    }
-  }
+      statements: 100,
+    },
+  },
 };
