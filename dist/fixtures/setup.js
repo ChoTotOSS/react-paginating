@@ -1,38 +1,42 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.total = exports.totalPages = exports.currentPage = exports.pageCount = exports.limit = exports.fruits = undefined;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 exports.default = setup;
+exports.total = exports.totalPages = exports.currentPage = exports.pageCount = exports.limit = exports.fruits = void 0;
 
-var _react = require('react');
+var _react = _interopRequireDefault(require("react"));
 
-var _react2 = _interopRequireDefault(_react);
-
-var _ = require('../');
-
-var _2 = _interopRequireDefault(_);
+var _ = _interopRequireDefault(require("../"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var fruits = exports.fruits = [['apple', 'orange'], ['banana', 'avocado'], ['coconut', 'blueberry'], ['payaya', 'peach'], ['pear', 'plum']];
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-var limit = exports.limit = 2;
-var pageCount = exports.pageCount = 3;
-var currentPage = exports.currentPage = 1;
-var totalPages = exports.totalPages = fruits.length;
-var total = exports.total = fruits.length * limit;
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var fruits = [['apple', 'orange'], ['banana', 'avocado'], ['coconut', 'blueberry'], ['payaya', 'peach'], ['pear', 'plum']];
+exports.fruits = fruits;
+var limit = 2;
+exports.limit = limit;
+var pageCount = 3;
+exports.pageCount = pageCount;
+var currentPage = 1;
+exports.currentPage = currentPage;
+var totalPages = fruits.length;
+exports.totalPages = totalPages;
+var total = fruits.length * limit;
+exports.total = total;
 
 function setup() {
   var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
       _ref$data = _ref.data,
-      data = _ref$data === undefined ? fruits : _ref$data,
+      data = _ref$data === void 0 ? fruits : _ref$data,
       _ref$itemProps = _ref.itemProps,
-      itemProps = _ref$itemProps === undefined ? {} : _ref$itemProps;
+      itemProps = _ref$itemProps === void 0 ? {} : _ref$itemProps;
 
   var Children = jest.fn(function (_ref2) {
     var pages = _ref2.pages,
@@ -43,71 +47,54 @@ function setup() {
         nextPage = _ref2.nextPage,
         totalPages = _ref2.totalPages,
         getPageItemProps = _ref2.getPageItemProps;
-    return _react2.default.createElement(
-      'div',
-      null,
-      _react2.default.createElement(
-        'a',
-        _extends({}, getPageItemProps(_extends({ pageValue: 1 }, itemProps)), {
-          id: 'page_first',
-          href: '1'
-        }),
-        'first'
-      ),
-      hasPreviousPage && _react2.default.createElement(
-        'a',
-        _extends({}, getPageItemProps(_extends({ pageValue: previousPage }, itemProps)), {
-          id: 'page_prev',
-          href: '' + previousPage
-        }),
-        '<'
-      ),
-      pages.map(function (page) {
-        var activePage = null;
-        if (currentPage === page) {
-          activePage = { backgroundColor: '#fdce09' };
-        }
-        return _react2.default.createElement(
-          'a',
-          _extends({
-            id: 'page_' + page,
-            key: page,
-            href: '' + page
-          }, getPageItemProps(_extends({ pageValue: page }, itemProps))),
-          page
-        );
-      }),
-      hasNextPage && _react2.default.createElement(
-        'a',
-        _extends({}, getPageItemProps(_extends({ pageValue: nextPage }, itemProps)), {
-          id: 'page_next',
-          href: '' + nextPage
-        }),
-        '>'
-      ),
-      _react2.default.createElement(
-        'a',
-        _extends({}, getPageItemProps(_extends({ pageValue: totalPages }, itemProps)), {
-          id: 'page_last',
-          href: '' + totalPages
-        }),
-        'last'
-      )
-    );
+    return _react.default.createElement("div", null, _react.default.createElement("a", _extends({}, getPageItemProps(_objectSpread({
+      pageValue: 1
+    }, itemProps)), {
+      id: "page_first",
+      href: "1"
+    }), "first"), hasPreviousPage && _react.default.createElement("a", _extends({}, getPageItemProps(_objectSpread({
+      pageValue: previousPage
+    }, itemProps)), {
+      id: "page_prev",
+      href: "".concat(previousPage)
+    }), '<'), pages.map(function (page) {
+      var activePage = null;
+
+      if (currentPage === page) {
+        activePage = {
+          backgroundColor: '#fdce09'
+        };
+      }
+
+      return _react.default.createElement("a", _extends({
+        id: "page_".concat(page),
+        key: page,
+        href: "".concat(page)
+      }, getPageItemProps(_objectSpread({
+        pageValue: page
+      }, itemProps))), page);
+    }), hasNextPage && _react.default.createElement("a", _extends({}, getPageItemProps(_objectSpread({
+      pageValue: nextPage
+    }, itemProps)), {
+      id: "page_next",
+      href: "".concat(nextPage)
+    }), '>'), _react.default.createElement("a", _extends({}, getPageItemProps(_objectSpread({
+      pageValue: totalPages
+    }, itemProps)), {
+      id: "page_last",
+      href: "".concat(totalPages)
+    }), "last"));
   });
 
   function BasicPagination(props) {
-    return _react2.default.createElement(
-      _2.default,
-      _extends({
-        total: total,
-        limit: limit,
-        pageCount: pageCount,
-        currentPage: currentPage
-      }, props),
-      Children
-    );
+    return _react.default.createElement(_.default, _extends({
+      total: total,
+      limit: limit,
+      pageCount: pageCount,
+      currentPage: currentPage
+    }, props), Children);
   }
+
   return {
     BasicPagination: BasicPagination,
     Children: Children

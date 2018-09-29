@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var testCase1 = exports.testCase1 = {
+exports.testCase4 = exports.testCase3 = exports.testCase1 = void 0;
+var testCase1 = {
   totalPages: 9,
   pages: 5,
   currentPage: 1,
@@ -18,8 +19,8 @@ var testCase1 = exports.testCase1 = {
   firstResult: 0,
   lastResult: 9
 };
-
-var testCase3 = exports.testCase3 = {
+exports.testCase1 = testCase1;
+var testCase3 = {
   totalPages: 9,
   pages: 5,
   currentPage: 9,
@@ -34,8 +35,8 @@ var testCase3 = exports.testCase3 = {
   firstResult: 80,
   lastResult: 89
 };
-
-var testCase4 = exports.testCase4 = {
+exports.testCase3 = testCase3;
+var testCase4 = {
   totalPages: 9,
   pages: 5,
   currentPage: 5,
@@ -50,3 +51,4 @@ var testCase4 = exports.testCase4 = {
   firstResult: 40,
   lastResult: 49
 };
+exports.testCase4 = testCase4;

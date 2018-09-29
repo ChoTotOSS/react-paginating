@@ -1,12 +1,11 @@
-'use strict';
+"use strict";
 
-var _utils = require('../utils');
+var _utils = require("../utils");
 
-var _testCase = require('../fixtures/testCase');
+var _testCase = require("../fixtures/testCase");
 
 var _global = global,
     it = _global.it;
-
 
 function compare(result, testCase) {
   expect(result.totalPages).toBe(testCase.totalPages);
@@ -32,7 +31,6 @@ it('test case 1', function () {
   });
   compare(pageInfo, _testCase.testCase1);
 });
-
 it('test case 2', function () {
   var pageInfo = (0, _utils.getPageInfo)({
     limit: 10,
@@ -42,12 +40,10 @@ it('test case 2', function () {
   });
   compare(pageInfo, _testCase.testCase1);
 });
-
 it('test case 3', function () {
   var limit = 10;
   var total = 90;
   var totalPages = Math.ceil(total / limit);
-
   var pageInfo = (0, _utils.getPageInfo)({
     limit: 10,
     pageCount: 5,
@@ -56,12 +52,10 @@ it('test case 3', function () {
   });
   compare(pageInfo, _testCase.testCase3);
 });
-
 it('test case 4', function () {
   var limit = 10;
   var total = 90;
   var totalPages = Math.ceil(total / limit);
-
   var pageInfo = (0, _utils.getPageInfo)({
     limit: 10,
     pageCount: 5,
