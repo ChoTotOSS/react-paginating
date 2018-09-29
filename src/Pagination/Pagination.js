@@ -11,7 +11,7 @@ class Pagination extends Component {
     };
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if (this.props.currentPage) {
       this.setState({
         currentPage: parseInt(this.props.currentPage, 10),
@@ -19,7 +19,7 @@ class Pagination extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.currentPage !== this.props.currentPage) {
       this.setState({
         currentPage: parseInt(nextProps.currentPage, 10),
