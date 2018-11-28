@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-import { getRange, getPageInfo } from './utils';
+import { getRange, getPageInfo } from "./utils";
 
 class Pagination extends Component {
   constructor() {
     super();
     this.state = {
-      currentPage: 0,
+      currentPage: 0
     };
   }
 
   componentWillMount() {
     if (this.props.currentPage) {
       this.setState({
-        currentPage: parseInt(this.props.currentPage, 10),
+        currentPage: parseInt(this.props.currentPage, 10)
       });
     }
   }
@@ -22,7 +22,7 @@ class Pagination extends Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.currentPage !== this.props.currentPage) {
       this.setState({
-        currentPage: parseInt(nextProps.currentPage, 10),
+        currentPage: parseInt(nextProps.currentPage, 10)
       });
     }
   }
@@ -30,17 +30,17 @@ class Pagination extends Component {
   _getPageItemProps = props => {
     const { pageValue, onPageChange: handlePageChange } = props;
 
-    const onPageChange = () => {
-      if (typeof handlePageChange === 'function') {
-        handlePageChange(pageValue);
+    const onPageChange = e => {
+      if (typeof handlePageChange === "function") {
+        handlePageChange(pageValue, e);
       }
       this.setState({
-        currentPage: pageValue,
+        currentPage: pageValue
       });
     };
 
     return {
-      onClick: onPageChange,
+      onClick: onPageChange
     };
   };
 
@@ -52,7 +52,7 @@ class Pagination extends Component {
       limit,
       pageCount,
       total,
-      page: currentPage,
+      page: currentPage
     });
 
     const {
@@ -62,7 +62,7 @@ class Pagination extends Component {
       hasPreviousPage,
       previousPage,
       nextPage,
-      totalPages,
+      totalPages
     } = pageInfo;
 
     const pages = total ? getRange(firstPage, lastPage) : [];
@@ -77,7 +77,7 @@ class Pagination extends Component {
           currentPage,
           hasNextPage,
           hasPreviousPage,
-          getPageItemProps: this._getPageItemProps,
+          getPageItemProps: this._getPageItemProps
         })}
       </div>
     );
@@ -91,14 +91,14 @@ Pagination.propTypes = {
   currentPage: PropTypes.number,
   pageValue: PropTypes.number,
   children: PropTypes.func.isRequired,
-  onPageChange: PropTypes.func,
+  onPageChange: PropTypes.func
 };
 
 Pagination.defaultProps = {
   limit: 10,
   pageCount: 5,
   currentPage: 0,
-  pageValue: 0,
+  pageValue: 0
 };
 
 export default Pagination;
