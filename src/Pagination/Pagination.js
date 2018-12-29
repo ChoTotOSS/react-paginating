@@ -30,9 +30,9 @@ class Pagination extends Component {
   _getPageItemProps = props => {
     const { pageValue, onPageChange: handlePageChange } = props;
 
-    const onPageChange = () => {
+    const onPageChange = (e) => {
       if (typeof handlePageChange === 'function') {
-        handlePageChange(pageValue);
+        handlePageChange(pageValue, e);
       }
       this.setState({
         currentPage: pageValue,
