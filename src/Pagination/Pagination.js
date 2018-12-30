@@ -30,7 +30,7 @@ class Pagination extends Component {
   _getPageItemProps = props => {
     const { pageValue, onPageChange: handlePageChange, ...rest } = props;
 
-    const onPageChange = (e) => {
+    const onPageChange = e => {
       if (typeof handlePageChange === 'function') {
         handlePageChange(pageValue, e);
       }
@@ -41,7 +41,7 @@ class Pagination extends Component {
 
     return {
       onClick: onPageChange,
-      ...rest
+      ...rest,
     };
   };
 

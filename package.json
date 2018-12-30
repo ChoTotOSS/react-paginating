@@ -1,6 +1,6 @@
 {
   "name": "react-paginating",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Simple, lightweight, flexible pagination component",
   "main": "dist/index.js",
   "typings": "typings/index.d.ts",
