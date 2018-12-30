@@ -43,6 +43,7 @@
   },
   "scripts": {
     "prebuild": "rimraf dist/*",
+    "start": "react-scripts start",
     "build": "babel src/Pagination --out-dir dist",
     "test": "react-scripts test --env=jsdom",
     "coverage": "npm test -- --coverage",

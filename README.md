@@ -131,10 +131,10 @@ class App extends React.Component {
                 }
                 return (
                   <button
-                    key={page}
-                    style={activePage}
                     {...getPageItemProps({
                       pageValue: page,
+                      key: page,
+                      style: activePage,
                       onPageChange: this.handlePageChange
                     })}
                   >
