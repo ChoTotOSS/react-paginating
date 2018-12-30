@@ -16,8 +16,10 @@ describe('getPageItemProps()', () => {
 
     const { BasicPagination, Children } = setup({
       itemProps: {
-        onPageChange: handlePageClickSpy
-      }
+        onPageChange: handlePageClickSpy,
+        href: '#',
+        role: 'button',
+      },
     });
 
     const wrapper = mount(<BasicPagination total={total} limit={limit} />);
@@ -28,9 +30,16 @@ describe('getPageItemProps()', () => {
     expect(handlePageClickSpy.called).toBe(true);
     expect(Children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        currentPage: 1
-      })
+        currentPage: 1,
+      }),
     );
+
+    // check props of each item
+    const { role, href, onClick, id } = item1.props();
+    expect(role === 'button').toBe(true);
+    expect(href === '#').toBe(true);
+    expect(typeof onClick === 'function').toBe(true);
+    expect(id === 'page_1').toBe(true);
 
     // page 3
     const item3 = wrapper.find('#page_3');
@@ -38,8 +47,8 @@ describe('getPageItemProps()', () => {
     expect(handlePageClickSpy.called).toBe(true);
     expect(Children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        currentPage: 3
-      })
+        currentPage: 3,
+      }),
     );
 
     // first page - ⏮
@@ -48,8 +57,8 @@ describe('getPageItemProps()', () => {
     expect(handlePageClickSpy.called).toBe(true);
     expect(Children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        currentPage: 1
-      })
+        currentPage: 1,
+      }),
     );
 
     // last page - ⏭
@@ -58,8 +67,8 @@ describe('getPageItemProps()', () => {
     expect(handlePageClickSpy.called).toBe(true);
     expect(Children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        currentPage: totalPages
-      })
+        currentPage: totalPages,
+      }),
     );
 
     // prev page - 1 - ⏪
@@ -68,8 +77,8 @@ describe('getPageItemProps()', () => {
     expect(handlePageClickSpy.called).toBe(true);
     expect(Children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        currentPage: totalPages - 1
-      })
+        currentPage: totalPages - 1,
+      }),
     );
 
     // prev page - 2 - ⏪
@@ -78,8 +87,8 @@ describe('getPageItemProps()', () => {
     expect(handlePageClickSpy.called).toBe(true);
     expect(Children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        currentPage: totalPages - 2
-      })
+        currentPage: totalPages - 2,
+      }),
     );
 
     // next page - ⏩
@@ -88,8 +97,8 @@ describe('getPageItemProps()', () => {
     expect(handlePageClickSpy.called).toBe(true);
     expect(Children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        currentPage: 4
-      })
+        currentPage: 4,
+      }),
     );
   });
 
@@ -98,12 +107,12 @@ describe('getPageItemProps()', () => {
 
     const { BasicPagination, Children } = setup({
       itemProps: {
-        onPageChange: handlePageClickSpy
-      }
+        onPageChange: handlePageClickSpy,
+      },
     });
 
     const wrapper = mount(
-      <BasicPagination total={total} limit={limit} currentPage={0} />
+      <BasicPagination total={total} limit={limit} currentPage={0} />,
     );
 
     // next page - ⏩
@@ -112,8 +121,8 @@ describe('getPageItemProps()', () => {
     expect(handlePageClickSpy.called).toBe(true);
     expect(Children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        currentPage: 2
-      })
+        currentPage: 2,
+      }),
     );
   });
 
@@ -122,8 +131,8 @@ describe('getPageItemProps()', () => {
 
     const { BasicPagination, Children } = setup({
       itemProps: {
-        onPageChange: handlePageClickSpy
-      }
+        onPageChange: handlePageClickSpy,
+      },
     });
 
     const wrapper = mount(
@@ -131,7 +140,7 @@ describe('getPageItemProps()', () => {
         total={total}
         limit={limit}
         currentPage={totalPages + 1}
-      />
+      />,
     );
 
     // prev page - 1 - ⏪
@@ -140,8 +149,8 @@ describe('getPageItemProps()', () => {
     expect(handlePageClickSpy.called).toBe(true);
     expect(Children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        currentPage: totalPages - 1
-      })
+        currentPage: totalPages - 1,
+      }),
     );
   });
 });

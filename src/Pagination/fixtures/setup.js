@@ -7,7 +7,7 @@ export const fruits = [
   ['banana', 'avocado'],
   ['coconut', 'blueberry'],
   ['payaya', 'peach'],
-  ['pear', 'plum']
+  ['pear', 'plum'],
 ];
 
 export const limit = 2;
@@ -26,7 +26,7 @@ export default function setup({ data = fruits, itemProps = {} } = {}) {
       previousPage,
       nextPage,
       totalPages,
-      getPageItemProps
+      getPageItemProps,
     }) => (
       <div>
         <a
@@ -82,7 +82,7 @@ export default function setup({ data = fruits, itemProps = {} } = {}) {
           last
         </a>
       </div>
-    )
+    ),
   );
 
   function BasicPagination(props) {
@@ -100,6 +100,6 @@ export default function setup({ data = fruits, itemProps = {} } = {}) {
   }
   return {
     BasicPagination,
-    Children
+    Children,
   };
 }

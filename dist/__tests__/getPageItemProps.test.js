@@ -33,7 +33,9 @@ describe('getPageItemProps()', function () {
 
     var _setup = (0, _setup5.default)({
       itemProps: {
-        onPageChange: handlePageClickSpy
+        onPageChange: handlePageClickSpy,
+        href: '#',
+        role: 'button'
       }
     }),
         BasicPagination = _setup.BasicPagination,
@@ -48,6 +50,19 @@ describe('getPageItemProps()', function () {
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       currentPage: 1
     }));
+
+    // check props of each item
+
+    var _item1$props = item1.props(),
+        role = _item1$props.role,
+        href = _item1$props.href,
+        onClick = _item1$props.onClick,
+        id = _item1$props.id;
+
+    expect(role === 'button').toBe(true);
+    expect(href === '#').toBe(true);
+    expect(typeof onClick === 'function').toBe(true);
+    expect(id === 'page_1').toBe(true);
 
     // page 3
     var item3 = wrapper.find('#page_3');
