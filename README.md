@@ -1,11 +1,10 @@
 
 # React Paginating
 
-[![Build Status](https://travis-ci.org/ChoTotOSS/react-paginating.svg?branch=master)](https://travis-ci.org/ChoTotOSS/react-paginating)
-[![codecov](https://codecov.io/gh/ChoTotOSS/react-paginating/branch/master/graph/badge.svg)](https://codecov.io/gh/ChoTotOSS/react-paginating)
-[![npm version](https://badge.fury.io/js/react-paginating.svg)](https://badge.fury.io/js/react-paginating)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ChoTotOSS/react-paginating/blob/master/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Build Status](https://travis-ci.org/ChoTotOSS/react-paginating.svg?branch=master)](https://travis-ci.org/ChoTotOSS/react-paginating) [![CircleCI](https://circleci.com/gh/davidnguyen179/react-paginating.svg?style=svg)](https://circleci.com/gh/davidnguyen179/react-paginating)
+
+  
+[![CircleCI](https://img.shields.io/npm/dm/react-paginating.svg)](https://img.shields.io/npm/dm/react-paginating.svg) [![codecov](https://codecov.io/gh/ChoTotOSS/react-paginating/branch/master/graph/badge.svg)](https://codecov.io/gh/ChoTotOSS/react-paginating) [![npm version](https://badge.fury.io/js/react-paginating.svg)](https://badge.fury.io/js/react-paginating) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ChoTotOSS/react-paginating/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 Simple lightweight pagination component.
 
