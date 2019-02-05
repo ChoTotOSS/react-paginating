@@ -6,6 +6,9 @@
   
 [![CircleCI](https://img.shields.io/npm/dm/react-paginating.svg)](https://img.shields.io/npm/dm/react-paginating.svg) [![codecov](https://codecov.io/gh/ChoTotOSS/react-paginating/branch/master/graph/badge.svg)](https://codecov.io/gh/ChoTotOSS/react-paginating) [![npm version](https://img.shields.io/npm/v/react-paginating.svg?style=flat-square)](https://badge.fury.io/js/react-paginating) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ChoTotOSS/react-paginating/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
+[![module formats](http://img.badgesize.io/https://unpkg.com/react-paginating@1.2.1/dist/react-paginating.umd.min.js?compression=gzip&label=gzip%20size&style=flat-square)](https://unpkg.com/react-paginating@1.2.1/dist/) [![module formats](https://img.shields.io/badge/module%20formats-umd,%20cjs,%20es-green.svg?style=flat-square)](https://unpkg.com/react-paginating@1.2.1/dist/)
+
+
 Simple lightweight pagination component.
 
 <div align="center">
