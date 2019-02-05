@@ -1,6 +1,6 @@
 {
   "name": "react-paginating",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Simple, lightweight, flexible pagination component",
   "main": "dist/react-paginating.umd.js",
   "module": "dist/react-paginating.esm.js",
