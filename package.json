@@ -1,6 +1,6 @@
 {
   "name": "react-paginating",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Simple, lightweight, flexible pagination component",
   "main": "dist/react-paginating.umd.js",
   "module": "dist/react-paginating.esm.js",
@@ -50,12 +50,14 @@
     "rimraf": "^2.6.2",
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-terser": "^4.0.4",
     "sinon": "^4.0.2"
   },
   "scripts": {
     "prebuild": "rimraf dist/*",
-    "start": "react-scripts start",
     "build": "rollup --config",
+    "postbuild": "BUILD_MINIFY=true rollup --config",
+    "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "coverage": "npm test -- --coverage",
     "eject": "react-scripts eject",
