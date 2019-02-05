@@ -8,6 +8,7 @@
 
 [![gzip size](http://img.badgesize.io/https://unpkg.com/react-paginating@1.2.1/dist/react-paginating.umd.min.js?compression=gzip&label=gzip%20size&style=flat-square)](https://unpkg.com/react-paginating@1.2.1/dist/) [![module formats](https://img.shields.io/badge/module%20formats-umd,%20cjs,%20es-green.svg?style=flat-square)](https://unpkg.com/react-paginating@1.2.1/dist/)
 
+<hr />
 
 Simple lightweight pagination component.
 
