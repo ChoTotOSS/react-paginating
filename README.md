@@ -73,7 +73,7 @@ class App extends React.Component {
     };
   }
 
-  handlePageChange = page => {
+  handlePageChange = (page, e) => {
     this.setState({
       currentPage: page
     });
