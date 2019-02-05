@@ -5,7 +5,14 @@
   "main": "dist/index.js",
   "typings": "typings/index.d.ts",
   "author": "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
+  "files": [
+    "dist",
+    "typings",
+    "flow-typed"
+  ],
   "keywords": [
+    "accessibility",
+    "WAI-ARIA",
     "react",
     "react-component",
     "pagination",
@@ -33,6 +40,8 @@
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
+    "flow-bin": "^0.92.1",
+    "flow-coverage-report": "^0.6.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -48,7 +57,10 @@
     "test": "react-scripts test --env=jsdom",
     "coverage": "npm test -- --coverage",
     "eject": "react-scripts eject",
-    "eslint": "eslint ./src/**/*.js"
+    "eslint": "eslint ./src/**/*.js",
+    "test:flow": "flow",
+    "test:flow:coverage": "flow-coverage-report",
+    "validate": "npm run test:flow:coverage && CI=true npm run test"
   },
   "license": "MIT",
   "repository": {
@@ -58,5 +70,14 @@
   "bugs": {
     "url": "https://github.com/ChoTotOSS/react-paginating/issues"
   },
-  "homepage": "https://github.com/ChoTotOSS/react-paginating/blob/master/README.md"
+  "homepage": "https://github.com/ChoTotOSS/react-paginating/blob/master/README.md",
+  "flow-coverage-report": {
+    "includeGlob": [
+      "test/**/*.js"
+    ],
+    "threshold": 90,
+    "type": [
+      "text"
+    ]
+  }
 }
