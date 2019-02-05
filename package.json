@@ -59,7 +59,8 @@
     "eject": "react-scripts eject",
     "eslint": "eslint ./src/**/*.js",
     "test:flow": "flow",
-    "test:flow:coverage": "flow-coverage-report"
+    "test:flow:coverage": "flow-coverage-report",
+    "validate": "npm run test:flow:coverage && CI=true npm run test"
   },
   "license": "MIT",
   "repository": {
