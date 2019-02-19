@@ -1,7 +1,7 @@
 
 # React Paginating
 
-[![Build Status](https://travis-ci.org/ChoTotOSS/react-paginating.svg?branch=master)](https://travis-ci.org/ChoTotOSS/react-paginating) [![CircleCI](https://circleci.com/gh/davidnguyen179/react-paginating.svg?style=svg)](https://circleci.com/gh/davidnguyen179/react-paginating)
+[![Build Status](https://travis-ci.org/ChoTotOSS/react-paginating.svg?branch=master)](https://travis-ci.org/ChoTotOSS/react-paginating) [![CircleCI](https://circleci.com/gh/davidnguyen179/react-paginating.svg?style=svg)](https://circleci.com/gh/davidnguyen179/react-paginating) [![cypress](https://img.shields.io/badge/cypress-dashboard-brightgreen.svg)](https://dashboard.cypress.io/#/projects/qncx9e/runs)
 
   
 [![CircleCI](https://img.shields.io/npm/dm/react-paginating.svg)](https://img.shields.io/npm/dm/react-paginating.svg) [![codecov](https://codecov.io/gh/ChoTotOSS/react-paginating/branch/master/graph/badge.svg)](https://codecov.io/gh/ChoTotOSS/react-paginating) [![npm version](https://img.shields.io/npm/v/react-paginating.svg?style=flat-square)](https://badge.fury.io/js/react-paginating) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ChoTotOSS/react-paginating/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
