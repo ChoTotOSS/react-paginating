@@ -4,29 +4,25 @@ import React from 'react';
 import Enzyme, { mount, shallow } from 'enzyme';
 import { spy } from 'sinon';
 import Adapter from 'enzyme-adapter-react-16';
-
-import setup, { total, limit, totalPages } from '../fixtures/setup';
+import TestPagination from '../fixtures/TestPagination';
 
 const { describe, it } = global;
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('getPageItemProps()', () => {
-  it('Event - onClick on page item', () => {
-    expect(1).toBe(1);
+  it('Event - onClick on page item - 2', async () => {
+    const wrapper = mount(<TestPagination />);
+    const expectation = `<div><ul><li>banana</li><li>avocado</li></ul><div><div><button id="page_first">first</button><button id="page_prev">&lt;</button><button id="page_1" style="">1</button><button id="page_2" style="background-color: rgb(253, 206, 9);">2</button><button id="page_3">3</button><button id="page_next">&gt;</button><button id="page_last">last</button></div></div></div>`;
+
+    wrapper.find('#page_2').simulate('click');
+    expect(wrapper.html()).toBe(expectation);
   });
 
-  // it('Event - onClick on page item', async () => {
-  //   const handlePageClickSpy = spy();
-  //   const { BasicPagination, Children } = setup({
-  //     itemProps: {
-  //       onPageChange: handlePageClickSpy,
-  //       href: '#',
-  //       role: 'button',
-  //     },
-  //   });
-  //   const wrapper = mount(<BasicPagination total={total} limit={limit} />);
-  //   wrapper.find('#page_2').simulate('click');
-  //   console.log(wrapper.html());
-  //   expect(handlePageClickSpy.called).toBe(true);
-  // });
+  it('Event - onClick on page item - first', async () => {
+    const wrapper = mount(<TestPagination />);
+    const expectation = `<div><ul><li>apple</li><li>orange</li></ul><div><div><button id="page_first">first</button><button id="page_1" style="background-color: rgb(253, 206, 9);">1</button><button id="page_2">2</button><button id="page_3">3</button><button id="page_next">&gt;</button><button id="page_last">last</button></div></div></div>`;
+
+    wrapper.find('#page_first').simulate('click');
+    expect(wrapper.html()).toBe(expectation);
+  });
 });

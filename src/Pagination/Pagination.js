@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { getRange, getPageInfo } from './utils';
 
 function Pagination(props) {
-  // Declare a new state variable, which we'll call "count"
   const [currentPage, setCurrentPage] = useState(1);
 
   if (props.currentPage && currentPage !== props.currentPage) {
