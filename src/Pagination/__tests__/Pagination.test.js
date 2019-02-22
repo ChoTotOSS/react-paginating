@@ -10,6 +10,13 @@ const { describe, it } = global;
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('<Pagination />', () => {
+  it('Total page is zero', () => {
+    const expectation = `<div><div><a id="page_first" href="1">first</a><a id="page_last" href="0">last</a></div></div>`;
+    const { BasicPagination } = setup();
+    const wrapper = shallow(<BasicPagination total={0} currentPage={2} />);
+    expect(wrapper.html()).toBe(expectation);
+  });
+
   it('Active page is a number 2', () => {
     const expectation = `<div><div><a id="page_first" href="1">first</a><a id="page_prev" href="1">&lt;</a><a id="page_1" href="1">1</a><a id="page_2" href="2" style="background-color:#fdce09">2</a><a id="page_3" href="3">3</a><a id="page_next" href="3">&gt;</a><a id="page_last" href="5">last</a></div></div>`;
     const { BasicPagination } = setup();
