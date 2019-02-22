@@ -2,13 +2,35 @@ import React from 'react';
 
 // https://github.com/airbnb/enzyme#upgrading-from-enzyme-2x-or-react--16
 import Enzyme, { mount } from 'enzyme';
+import { spy } from 'sinon';
 import Adapter from 'enzyme-adapter-react-16';
+
+import setup, { total, limit } from '../fixtures/setup';
 import TestPagination from '../fixtures/TestPagination';
 
 const { describe, it } = global;
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('getPageItemProps()', () => {
+  it('onPageChange is not a function', () => {
+    const handlePageClickSpy = spy();
+
+    const { BasicPagination } = setup({
+      itemProps: {
+        onPageChange: 'test',
+        href: '#',
+        role: 'button',
+      },
+    });
+
+    const wrapper = mount(<BasicPagination total={total} limit={limit} />);
+
+    // page 1
+    const item1 = wrapper.find('#page_1');
+    item1.simulate('click');
+    expect(handlePageClickSpy.called).toBe(false);
+  });
+
   it('Event - onClick on page item', () => {
     const wrapper = mount(<TestPagination />);
 
