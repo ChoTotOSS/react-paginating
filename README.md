@@ -53,6 +53,7 @@ yarn add react-paginating
 You can check out the basic demo here:
 - Javascript: [https://codesandbox.io/s/z2rr7z23ol](https://codesandbox.io/s/z2rr7z23ol)
 - Typescript: [https://codesandbox.io/s/9252p34v8r](https://codesandbox.io/s/9252p34v8r)
+- Server-Side Rendering: [https://codesandbox.io/s/vq40kw1yn5](https://codesandbox.io/s/vq40kw1yn5)
 
 ```js
 import React from 'react';
