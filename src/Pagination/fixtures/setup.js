@@ -6,7 +6,7 @@ export const fruits = [
   ['apple', 'orange'],
   ['banana', 'avocado'],
   ['coconut', 'blueberry'],
-  ['payaya', 'peach'],
+  ['papaya', 'peach'],
   ['pear', 'plum'],
 ];
 
@@ -57,7 +57,7 @@ export default function setup({ data = fruits, itemProps = {} } = {}) {
               id={`page_${page}`}
               key={page}
               href={`${page}`}
-              {...getPageItemProps({ pageValue: page, ...itemProps })}
+              {...getPageItemProps({ style: activePage, pageValue: page, ...itemProps })}
             >
               {page}
             </a>
