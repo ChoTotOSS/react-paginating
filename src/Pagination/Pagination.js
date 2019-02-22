@@ -8,7 +8,7 @@ function Pagination(props) {
     setCurrentPage(parseInt(props.currentPage, 10));
   }
 
-  function _getPageItemProps(props) {
+  const _getPageItemProps = props => {
     const { pageValue, onPageChange: handlePageChange, ...rest } = props;
 
     const onPageChange = e => {
@@ -22,7 +22,7 @@ function Pagination(props) {
       onClick: onPageChange,
       ...rest,
     };
-  }
+  };
 
   const { total, limit, pageCount } = props;
 
