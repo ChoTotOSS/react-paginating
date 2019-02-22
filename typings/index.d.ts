@@ -21,6 +21,6 @@ export interface PaginationProps {
   onPageChange?: (page?: number) => void;
 }
 
-declare class Pagination extends React.Component<PaginationProps, any> {}
+declare function Pagination(props: any): React.SFC<PaginationProps>;
 
 export default Pagination;
