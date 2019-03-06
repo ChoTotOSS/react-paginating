@@ -180,8 +180,8 @@ render(<App />, document.getElementById('root'));
 
 ## Examples
 
-* [with simple basic data](https://github.com/ChoTotOSS/react-paginating/tree/master/examples/withBasic)
-* [with redux & query param from url](https://github.com/ChoTotOSS/react-paginating/tree/master/examples/withNextJSRedux)
+* [withClientSideRendering](https://github.com/ChoTotOSS/react-paginating/tree/hook/examples/withClientSideRendering)
+* [withServerSideRendering](https://github.com/ChoTotOSS/react-paginating/tree/hook/examples/withServerSideRendering)
 
 ## Input Props
 
