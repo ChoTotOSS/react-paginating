@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { getRange, getPageInfo } from './utils';
+import { getRange, getPageInfo } from 'paging-algorithm';
 
 function Pagination(props) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -21,7 +21,7 @@ function Pagination(props) {
 
     return {
       onClick: onPageChange,
-      ...rest,
+      ...rest
     };
   };
 
@@ -31,18 +31,10 @@ function Pagination(props) {
     limit,
     pageCount,
     total,
-    page: currentPage,
+    page: currentPage
   });
 
-  const {
-    firstPage,
-    lastPage,
-    hasNextPage,
-    hasPreviousPage,
-    previousPage,
-    nextPage,
-    totalPages,
-  } = pageInfo;
+  const { firstPage, lastPage, hasNextPage, hasPreviousPage, previousPage, nextPage, totalPages } = pageInfo;
 
   const pages = total > 0 ? getRange(firstPage, lastPage) : [];
 
@@ -56,7 +48,7 @@ function Pagination(props) {
         currentPage,
         hasNextPage,
         hasPreviousPage,
-        getPageItemProps: _getPageItemProps,
+        getPageItemProps: _getPageItemProps
       })}
     </div>
   );
@@ -69,14 +61,14 @@ Pagination.propTypes = {
   currentPage: PropTypes.number,
   pageValue: PropTypes.number,
   children: PropTypes.func.isRequired,
-  onPageChange: PropTypes.func,
+  onPageChange: PropTypes.func
 };
 
 Pagination.defaultProps = {
   limit: 10,
   pageCount: 5,
   currentPage: 0,
-  pageValue: 0,
+  pageValue: 0
 };
 
 export default Pagination;
