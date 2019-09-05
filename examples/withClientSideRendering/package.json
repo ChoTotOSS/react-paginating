@@ -1,0 +1,21 @@
+{
+  "name": "with-client-side-rendering",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "prod": "npm run build && npm start",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "next": "latest",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-paginating": "latest"
+  }
+}

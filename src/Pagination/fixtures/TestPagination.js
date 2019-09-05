@@ -1,18 +1,18 @@
 import React from 'react';
-import Pagination from 'react-paginating';
+import Pagination from '../../Pagination';
 
 const fruits = [
   ['apple', 'orange'],
   ['banana', 'avocado'],
   ['coconut', 'blueberry'],
-  ['payaya', 'peach'],
+  ['papaya', 'peach'],
   ['pear', 'plum']
 ];
 const limit = 2;
 const pageCount = 3;
 const total = fruits.length * limit;
 
-class Index extends React.Component {
+class TestPagination extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -20,7 +20,7 @@ class Index extends React.Component {
     };
   }
 
-  handlePageChange = page => {
+  handlePageChange = (page, e) => {
     this.setState({
       currentPage: page
     });
@@ -40,17 +40,18 @@ class Index extends React.Component {
           currentPage={currentPage}
         >
           {({
-            pages,
-            currentPage,
-            hasNextPage,
-            hasPreviousPage,
-            previousPage,
-            nextPage,
-            totalPages,
-            getPageItemProps
-          }) => (
+              pages,
+              currentPage,
+              hasNextPage,
+              hasPreviousPage,
+              previousPage,
+              nextPage,
+              totalPages,
+              getPageItemProps
+            }) => (
             <div>
               <button
+                id="page_first"
                 {...getPageItemProps({
                   pageValue: 1,
                   onPageChange: this.handlePageChange
@@ -61,6 +62,7 @@ class Index extends React.Component {
 
               {hasPreviousPage && (
                 <button
+                  id="page_prev"
                   {...getPageItemProps({
                     pageValue: previousPage,
                     onPageChange: this.handlePageChange
@@ -77,10 +79,11 @@ class Index extends React.Component {
                 }
                 return (
                   <button
-                    key={page}
-                    style={activePage}
+                    id={`page_${page}`}
                     {...getPageItemProps({
                       pageValue: page,
+                      key: page,
+                      style: activePage,
                       onPageChange: this.handlePageChange
                     })}
                   >
@@ -91,6 +94,7 @@ class Index extends React.Component {
 
               {hasNextPage && (
                 <button
+                  id="page_next"
                   {...getPageItemProps({
                     pageValue: nextPage,
                     onPageChange: this.handlePageChange
@@ -101,6 +105,7 @@ class Index extends React.Component {
               )}
 
               <button
+                id="page_last"
                 {...getPageItemProps({
                   pageValue: totalPages,
                   onPageChange: this.handlePageChange
@@ -116,4 +121,4 @@ class Index extends React.Component {
   }
 }
 
-export default Index;
+export default TestPagination;

@@ -1,6 +1,6 @@
 {
   "name": "react-paginating",
-  "version": "1.2.1",
+  "version": "1.3.0-hook.2",
   "description": "Simple, lightweight, flexible pagination component",
   "main": "dist/react-paginating.umd.js",
   "module": "dist/react-paginating.esm.js",
@@ -21,21 +21,25 @@
     "paginator",
     "pagination-components"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "babel-eslint": "10.0.2",
+    "eslint": "6.1.0",
+    "paging-algorithm": "^1.0.1",
+    "react-scripts": "^3.1.1"
+  },
   "peerDependencies": {
     "prop-types": ">=15",
-    "react": ">=15"
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.3.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "babel-eslint": "^10.0.1",
     "cypress": "^3.1.5",
-    "enzyme": "^3.1.0",
-    "enzyme-adapter-react-15": "^1.0.2",
-    "eslint": "^5.13.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
     "eslint-config-react-app": "^2.0.0",
     "eslint-plugin-flowtype": "^2.34.1",
     "eslint-plugin-import": "^2.6.0",
@@ -44,10 +48,9 @@
     "flow-bin": "^0.92.1",
     "flow-coverage-report": "^0.6.1",
     "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-scripts": "1.0.11",
-    "react-test-renderer": "^15.6.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-test-renderer": "^16.8.2",
     "rimraf": "^2.6.2",
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2",
@@ -60,7 +63,7 @@
     "postbuild": "BUILD_MINIFY=true rollup --config",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
-    "coverage": "npm test -- --coverage",
+    "coverage": "npm test -- --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "eslint": "eslint ./src/**/*.js",
     "test:flow": "flow",
@@ -85,5 +88,11 @@
     "type": [
       "text"
     ]
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

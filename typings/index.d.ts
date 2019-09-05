@@ -1,4 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
+
+export type PaginationItemProps<T extends HTMLElement = HTMLElement> = Omit<PaginationProps, 'children'> &
+  React.HTMLAttributes<T>;
 
 export interface PaginationState {
   pages: number[];
@@ -8,7 +11,9 @@ export interface PaginationState {
   currentPage: number;
   hasNextPage: boolean;
   hasPreviousPage: boolean;
-  getPageItemProps: (props: any) => void;
+  getPageItemProps: <T extends HTMLElement = HTMLElement>(
+    props: PaginationItemProps<T>
+  ) => PaginationItemProps<T> & { onClick: (event: React.MouseEvent) => void };
 }
 
 export interface PaginationProps {
@@ -18,9 +23,9 @@ export interface PaginationProps {
   pageCount?: number;
   currentPage?: number;
   pageValue?: number;
-  onPageChange?: (page?: number) => void;
+  onPageChange?: (page?: number, event?: React.MouseEvent) => void;
 }
 
-declare class Pagination extends React.Component<PaginationProps, any> {}
+declare const Pagination: React.ComponentType<PaginationProps>;
 
 export default Pagination;

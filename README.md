@@ -51,7 +51,9 @@ yarn add react-paginating
 ## Usage
 
 You can check out the basic demo here:
-[https://codesandbox.io/s/z2rr7z23ol](https://codesandbox.io/s/z2rr7z23ol)
+- Javascript: [https://codesandbox.io/s/z2rr7z23ol](https://codesandbox.io/s/z2rr7z23ol)
+- Typescript: [https://codesandbox.io/s/9252p34v8r](https://codesandbox.io/s/9252p34v8r)
+- Server-Side Rendering: [https://codesandbox.io/s/vq40kw1yn5](https://codesandbox.io/s/vq40kw1yn5)
 
 ```js
 import React from 'react';
@@ -178,8 +180,8 @@ render(<App />, document.getElementById('root'));
 
 ## Examples
 
-* [with simple basic data](https://github.com/ChoTotOSS/react-paginating/tree/master/examples/withBasic)
-* [with redux & query param from url](https://github.com/ChoTotOSS/react-paginating/tree/master/examples/withNextJSRedux)
+* [withClientSideRendering](https://github.com/ChoTotOSS/react-paginating/tree/hook/examples/withClientSideRendering)
+* [withServerSideRendering](https://github.com/ChoTotOSS/react-paginating/tree/hook/examples/withServerSideRendering)
 
 ## Input Props
 

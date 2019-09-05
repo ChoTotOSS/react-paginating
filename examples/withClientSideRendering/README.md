@@ -1,4 +1,4 @@
-# Example with static data
+# Example with Client Side Rendering
 
 ## How to use
 
@@ -6,7 +6,7 @@ Download the example
 [or clone the repo](https://github.com/ChoTotOSS/react-paginating):
 
 ```bash
-cd examples/withBasic
+cd examples/withClientSideRendering
 ```
 
 ## Development
@@ -16,15 +16,15 @@ Install it and run:
 npm
 
 ```bash
-npm i
-npm start
+npm install
+npm run dev
 ```
 
 yarn
 
 ```bash
 yarn install
-yarn start
+yarn dev
 ```
 
 ## Production
@@ -35,12 +35,12 @@ npm
 
 ```bash
 npm install
-npm start:prod
+npm run prod
 ```
 
 yarn
 
 ```bash
 yarn install
-yarn start:prod
+yarn prod
 ```
