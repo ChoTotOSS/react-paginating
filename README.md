@@ -18,9 +18,9 @@ Simple lightweight pagination component.
   <br />
 </div>
 
-The component applied `Function as Child Components` pattern. (You can read more
+The component applied `Render Props` pattern. (You can read more
 about this pattern
-[here](https://medium.com/merrickchristensen/function-as-child-components-5f3920a9ace9)).
+[here](https://reactjs.org/docs/render-props.html)).
 
 This approach allows you to fully control UI component and behaviours.
 
