@@ -22,10 +22,7 @@
     "pagination-components"
   ],
   "dependencies": {
-    "babel-eslint": "10.0.2",
-    "eslint": "6.1.0",
-    "paging-algorithm": "^1.0.1",
-    "react-scripts": "^3.1.1"
+    "paging-algorithm": "^1.0.1"
   },
   "peerDependencies": {
     "prop-types": ">=15",
@@ -55,7 +52,10 @@
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-terser": "^4.0.4",
-    "sinon": "^4.0.2"
+    "sinon": "^4.0.2",
+    "react-scripts": "^3.1.1",
+    "babel-eslint": "10.0.2",
+    "eslint": "6.1.0"
   },
   "scripts": {
     "prebuild": "rimraf dist/*",
