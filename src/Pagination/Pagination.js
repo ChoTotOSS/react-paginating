@@ -25,7 +25,7 @@ function Pagination(props) {
     };
   };
 
-  const { total, limit, pageCount } = props;
+  const { total, limit, pageCount, wrapperComponent, wrapperStyles = {} } = props;
 
   const pageInfo = getPageInfo({
     limit,
@@ -38,8 +38,10 @@ function Pagination(props) {
 
   const pages = total > 0 ? getRange(firstPage, lastPage) : [];
 
+  const Wrapper = wrapperComponent || 'div';
+
   return (
-    <div>
+    <Wrapper {...wrapperStyles}>
       {props.children({
         pages,
         previousPage,
@@ -50,7 +52,7 @@ function Pagination(props) {
         hasPreviousPage,
         getPageItemProps: _getPageItemProps
       })}
-    </div>
+    </Wrapper>
   );
 }
 
@@ -61,7 +63,9 @@ Pagination.propTypes = {
   currentPage: PropTypes.number,
   pageValue: PropTypes.number,
   children: PropTypes.func.isRequired,
-  onPageChange: PropTypes.func
+  onPageChange: PropTypes.func,
+  wrapperComponent: PropTypes.element,
+  wrapperStyles: PropTypes.object
 };
 
 Pagination.defaultProps = {

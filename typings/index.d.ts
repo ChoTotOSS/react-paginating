@@ -1,6 +1,9 @@
 import * as React from 'react';
 
-export type PaginationItemProps<T extends HTMLElement = HTMLElement> = Omit<PaginationProps, 'children'> &
+export type PaginationItemProps<T extends HTMLElement = HTMLElement> = Omit<
+  PaginationProps,
+  'children' | 'total' | 'wrapperComponent'
+> &
   React.HTMLAttributes<T>;
 
 export interface PaginationState {
@@ -24,6 +27,8 @@ export interface PaginationProps {
   currentPage?: number;
   pageValue?: number;
   onPageChange?: (page?: number, event?: React.MouseEvent) => void;
+  wrapperComponent?: React.ReactNode;
+  wrapperStyles?: { [key: string]: string | { [key: string]: string } };
 }
 
 declare const Pagination: React.ComponentType<PaginationProps>;
