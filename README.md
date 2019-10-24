@@ -209,6 +209,18 @@ How many pages number you want to display in pagination zone.
 
 Current page number
 
+### wrapperComponent
+
+> `React.ReactNode || string`
+
+A simple wrapper component to replace the default `div` tag
+
+### wrapperStyles
+
+> `object`
+
+A style object that is spread on the `wrapperComponent`
+
 ## Child callback functions
 
 ### getPageItemProps
