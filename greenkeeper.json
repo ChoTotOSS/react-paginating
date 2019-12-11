@@ -1,0 +1,11 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "examples/withClientSideRendering/package.json",
+        "examples/withServerSideRendering/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
