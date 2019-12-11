@@ -6,9 +6,9 @@
   
 [![CircleCI](https://img.shields.io/npm/dm/react-paginating.svg)](https://img.shields.io/npm/dm/react-paginating.svg) [![codecov](https://codecov.io/gh/ChoTotOSS/react-paginating/branch/master/graph/badge.svg)](https://codecov.io/gh/ChoTotOSS/react-paginating) [![npm version](https://img.shields.io/npm/v/react-paginating.svg?style=flat-square)](https://badge.fury.io/js/react-paginating) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ChoTotOSS/react-paginating/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![gzip size](http://img.badgesize.io/https://unpkg.com/react-paginating@1.2.1/dist/react-paginating.umd.min.js?compression=gzip&label=gzip%20size&style=flat-square)](https://unpkg.com/react-paginating@1.2.1/dist/) [![module formats](https://img.shields.io/badge/module%20formats-umd,%20cjs,%20es-green.svg?style=flat-square)](https://unpkg.com/react-paginating@1.2.1/dist/) [![Package Quality](https://npm.packagequality.com/shield/react-paginating.svg)](https://packagequality.com/#?package=react-paginating)
+[![gzip size](http://img.badgesize.io/https://unpkg.com/react-paginating@1.2.1/dist/react-paginating.umd.min.js?compression=gzip&label=gzip%20size&style=flat-square)](https://unpkg.com/react-paginating@1.2.1/dist/) [![module formats](https://img.shields.io/badge/module%20formats-umd,%20cjs,%20es-green.svg?style=flat-square)](https://unpkg.com/react-paginating@1.2.1/dist/) [![Greenkeeper badge](https://badges.greenkeeper.io/ChoTotOSS/react-paginating.svg)](https://greenkeeper.io/) [![Package Quality](https://npm.packagequality.com/shield/react-paginating.svg)](https://packagequality.com/#?package=react-paginating)
 
- [![Package Quality](https://npm.packagequality.com/badge/react-paginating.png)](http://packagequality.com/#?package=react-paginating) [![Greenkeeper badge](https://badges.greenkeeper.io/ChoTotOSS/react-paginating.svg)](https://greenkeeper.io/)
+[![Package Quality](https://npm.packagequality.com/badge/react-paginating.png)](http://packagequality.com/#?package=react-paginating) 
 
 <hr />
 
