@@ -267,3 +267,20 @@ explore alternatives with different tradeoffs. Some of the more popular and
 actively maintained ones are:
 
 * [react-paginate](https://github.com/AdeleD/react-paginate)
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.dzungnguyen.dev/about"><img src="https://avatars3.githubusercontent.com/u/6290720?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Dzung Nguyen</b></sub></a><br /><a href="https://github.com/davidnguyen179/react-paginating/commits?author=davidnguyen179" title="Documentation">📖</a> <a href="https://github.com/davidnguyen179/react-paginating/commits?author=davidnguyen179" title="Code">💻</a> <a href="#ideas-davidnguyen179" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/davidnguyen179/react-paginating/pulls?q=is%3Apr+reviewed-by%3Adavidnguyen179" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/davidnguyen179/react-paginating/issues?q=author%3Adavidnguyen179" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://nartc.netlify.com/about"><img src="https://avatars0.githubusercontent.com/u/25516557?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Chau Tran</b></sub></a><br /><a href="https://github.com/davidnguyen179/react-paginating/commits?author=nartc" title="Code">💻</a> <a href="#ideas-nartc" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/davidnguyen179/react-paginating/pulls?q=is%3Apr+reviewed-by%3Anartc" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/davidnguyen179/react-paginating/issues?q=author%3Anartc" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/abusada"><img src="https://avatars3.githubusercontent.com/u/2572320?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Faris Abusada</b></sub></a><br /><a href="https://github.com/davidnguyen179/react-paginating/commits?author=abusada" title="Code">💻</a> <a href="https://github.com/davidnguyen179/react-paginating/issues?q=author%3Aabusada" title="Bug reports">🐛</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->

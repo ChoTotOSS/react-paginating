@@ -34,9 +34,12 @@
     "@babel/plugin-proposal-class-properties": "^7.3.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
+    "all-contributors-cli": "^6.11.2",
+    "babel-eslint": "10.0.2",
     "cypress": "^3.1.5",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
+    "eslint": "6.1.0",
     "eslint-config-react-app": "^2.0.0",
     "eslint-plugin-flowtype": "^2.34.1",
     "eslint-plugin-import": "^2.6.0",
@@ -47,15 +50,13 @@
     "prop-types": "^15.5.10",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
+    "react-scripts": "^3.1.1",
     "react-test-renderer": "^16.8.2",
     "rimraf": "^2.6.2",
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-terser": "^4.0.4",
-    "sinon": "^4.0.2",
-    "react-scripts": "^3.1.1",
-    "babel-eslint": "10.0.2",
-    "eslint": "6.1.0"
+    "sinon": "^4.0.2"
   },
   "scripts": {
     "prebuild": "rimraf dist/*",
@@ -69,7 +70,9 @@
     "test:flow": "flow",
     "test:flow:coverage": "flow-coverage-report",
     "validate": "npm run test:flow:coverage && CI=true npm run test",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "license": "MIT",
   "repository": {
