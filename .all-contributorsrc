@@ -1,0 +1,50 @@
+{
+  "projectName": "react-paginating",
+  "projectOwner": "davidnguyen179",
+  "repoType": "github",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "davidnguyen179",
+      "name": "Dzung Nguyen",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6290720?s=460&v=4",
+      "profile": "https://www.dzungnguyen.dev/about",
+      "contributions": [
+        "doc",
+        "code",
+        "ideas",
+        "review",
+        "bug"
+      ]
+    },
+    {
+      "login": "nartc",
+      "name": "Chau Tran",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/25516557?s=460&v=4",
+      "profile": "https://nartc.netlify.com/about",
+      "contributions": [
+        "code",
+        "ideas",
+        "review",
+        "bug"
+      ]
+    },
+    {
+      "login": "abusada",
+      "name": "Faris Abusada",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2572320?s=460&v=4",
+      "profile": "https://github.com/abusada",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    }
+  ],
+  "repoHost": "https://github.com",
+  "contributorsPerLine": 7,
+  "commitConvention": "none"
+}
