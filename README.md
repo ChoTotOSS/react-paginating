@@ -8,7 +8,7 @@
 
 [![gzip size](http://img.badgesize.io/https://unpkg.com/react-paginating@1.2.1/dist/react-paginating.umd.min.js?compression=gzip&label=gzip%20size&style=flat-square)](https://unpkg.com/react-paginating@1.2.1/dist/) [![module formats](https://img.shields.io/badge/module%20formats-umd,%20cjs,%20es-green.svg?style=flat-square)](https://unpkg.com/react-paginating@1.2.1/dist/) [![Package Quality](https://npm.packagequality.com/shield/react-paginating.svg)](https://packagequality.com/#?package=react-paginating)
 
- [![Package Quality](https://npm.packagequality.com/badge/react-paginating.png)](http://packagequality.com/#?package=react-paginating)
+ [![Package Quality](https://npm.packagequality.com/badge/react-paginating.png)](http://packagequality.com/#?package=react-paginating) [![Greenkeeper badge](https://badges.greenkeeper.io/ChoTotOSS/react-paginating.svg)](https://greenkeeper.io/)
 
 <hr />
 
