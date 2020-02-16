@@ -19,6 +19,7 @@ export interface PaginationState {
 export interface PaginationProps {
   total: number;
   children: (props: PaginationState) => React.ReactNode;
+  className?: string;
   limit?: number;
   pageCount?: number;
   currentPage?: number;
