@@ -25,7 +25,7 @@ function Pagination(props) {
     };
   };
 
-  const { total, limit, pageCount } = props;
+  const { total, limit, pageCount, className } = props;
 
   const pageInfo = getPageInfo({
     limit,
@@ -39,7 +39,7 @@ function Pagination(props) {
   const pages = total > 0 ? getRange(firstPage, lastPage) : [];
 
   return (
-    <div>
+    <div className={className}>
       {props.children({
         pages,
         previousPage,
@@ -56,6 +56,7 @@ function Pagination(props) {
 
 Pagination.propTypes = {
   total: PropTypes.number.isRequired,
+  className: PropTypes.string,
   limit: PropTypes.number,
   pageCount: PropTypes.number,
   currentPage: PropTypes.number,

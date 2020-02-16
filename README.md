@@ -1,18 +1,19 @@
-
 # React Paginating
 
 [![Build Status](https://travis-ci.org/ChoTotOSS/react-paginating.svg?branch=master)](https://travis-ci.org/ChoTotOSS/react-paginating) [![CircleCI](https://circleci.com/gh/davidnguyen179/react-paginating.svg?style=svg)](https://circleci.com/gh/davidnguyen179/react-paginating) [![cypress](https://img.shields.io/badge/cypress-dashboard-brightgreen.svg)](https://dashboard.cypress.io/#/projects/qncx9e/runs)
 
-  
 [![CircleCI](https://img.shields.io/npm/dm/react-paginating.svg)](https://img.shields.io/npm/dm/react-paginating.svg) [![codecov](https://codecov.io/gh/ChoTotOSS/react-paginating/branch/master/graph/badge.svg)](https://codecov.io/gh/ChoTotOSS/react-paginating) [![npm version](https://img.shields.io/npm/v/react-paginating.svg?style=flat-square)](https://badge.fury.io/js/react-paginating) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ChoTotOSS/react-paginating/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 [![gzip size](http://img.badgesize.io/https://unpkg.com/react-paginating@1.2.1/dist/react-paginating.umd.min.js?compression=gzip&label=gzip%20size&style=flat-square)](https://unpkg.com/react-paginating@1.2.1/dist/) [![module formats](https://img.shields.io/badge/module%20formats-umd,%20cjs,%20es-green.svg?style=flat-square)](https://unpkg.com/react-paginating@1.2.1/dist/) [![Greenkeeper badge](https://badges.greenkeeper.io/ChoTotOSS/react-paginating.svg)](https://greenkeeper.io/) [![Package Quality](https://npm.packagequality.com/shield/react-paginating.svg)](https://packagequality.com/#?package=react-paginating)
 
 [![Package Quality](https://npm.packagequality.com/badge/react-paginating.png)](http://packagequality.com/#?package=react-paginating) 
 
-<hr />
 
-Simple lightweight pagination component.
+## Motivation
+
+During development, we were facing problems supporting server-rendering of our web app & SEO (require pagination links). To solve that, we had to add 2 snippets of code, one to support the server-side and another to support the client-side which lead to being hard for maintenance. Most of the pagination libraries only support client-rendering by attaching event handlers on the pagination button to redirect. Because of that, we created this library which allows flexibly to customize behaviors (attaching event handlers or href attribute) and user interface.
+
+<hr />
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/6290720/33229010-d65daf4a-d1f8-11e7-851a-7d3e0d454b48.gif" />
@@ -57,6 +58,12 @@ You can check out the basic demo here:
 - Typescript: [https://codesandbox.io/s/9252p34v8r](https://codesandbox.io/s/9252p34v8r)
 - Server-Side Rendering: [https://codesandbox.io/s/vq40kw1yn5](https://codesandbox.io/s/vq40kw1yn5)
 
+```css
+.bg-red {
+  background-color: red;
+}
+```
+
 ```js
 import React from 'react';
 import { render } from 'react-dom';
@@ -95,6 +102,7 @@ class App extends React.Component {
           {fruits[currentPage - 1].map(item => <li key={item}>{item}</li>)}
         </ul>
         <Pagination
+          className="bg-red"
           total={total}
           limit={limit}
           pageCount={pageCount}
@@ -192,6 +200,12 @@ render(<App />, document.getElementById('root'));
 > `number`
 
 Total results
+
+### className
+
+> `string`
+
+Customizable style for pagination wrapper
 
 ### limit
 
