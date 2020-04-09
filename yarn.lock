@@ -6061,10 +6061,10 @@ flow-bin@^0.117.0:
   resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.117.0.tgz#2fd331f476dac31f7dae6ac9b557581ebc84e8ad"
   integrity sha512-LwDdiApyQsO26ubieaLBcW//K8QNcFR50FSUUDo5roy+2nsvkfRdJa0Qse2De6/2fwBElLDDrc3rrSzvC3hy2Q==
 
-flow-coverage-report@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/flow-coverage-report/-/flow-coverage-report-0.6.1.tgz#b7b3458093dba1aebf48288b251877bb6861fe5b"
-  integrity sha512-AUMuC4rocbGcyhKG8oINN4qKaJ2aYbhZQlyk5ro9/TcQ1+gdcy/O0OM9iilEmL2uJraHkFpwo9dCfiJbvRwQcA==
+flow-coverage-report@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/flow-coverage-report/-/flow-coverage-report-0.7.0.tgz#3e6d2279c031f2e1993eecaa3afd000e0dbfdc99"
+  integrity sha512-lVZKME2mRt0O6qLMJPmROekrLRjySGeuyh5/VxmgQpvoACuuSPfgiWkLr+U9Y7Ric1yFtLYKl5PYYyP2R5bDNQ==
   dependencies:
     "@rpl/badge-up" "2.2.0"
     array.prototype.find "2.0.4"
@@ -6072,7 +6072,7 @@ flow-coverage-report@^0.6.1:
     flow-annotation-check "1.8.1"
     glob "7.1.1"
     minimatch "3.0.4"
-    mkdirp "0.5.1"
+    mkdirp "^1.0.4"
     parse-json "2.2.0"
     react "15.5.4"
     react-dom "15.5.4"
@@ -8944,6 +8944,11 @@ mkdirp@0.5.1, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1:
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+mkdirp@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
+  integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
 moment@2.22.2:
   version "2.22.2"
