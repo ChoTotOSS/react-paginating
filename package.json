@@ -42,7 +42,7 @@
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.1.0",
-    "flow-bin": "^0.119.0",
+    "flow-bin": "^0.123.0",
     "flow-coverage-report": "0.7.0",
     "prop-types": "^15.5.10",
     "react": "^16.13.0",
