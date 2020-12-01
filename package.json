@@ -61,7 +61,6 @@
     "postbuild": "BUILD_MINIFY=true rollup --config",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
-    "coverage": "npm test -- --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "eslint": "eslint ./src/**/*.js",
     "test:flow": "flow",
